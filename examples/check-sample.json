@@ -1,0 +1,43 @@
+{
+  "rpcUrl": "http://127.0.0.1:8227",
+  "diagnostics": [
+    {
+      "status": "pass",
+      "title": "Fiber RPC reachable"
+    },
+    {
+      "status": "pass",
+      "title": "Node info fetched successfully"
+    },
+    {
+      "status": "pass",
+      "title": "Node identity available",
+      "details": "031021597829e4c7c3f20eee2d1a51c874a0e94b9479d1498f4d0984b56064d897"
+    },
+    {
+      "status": "pass",
+      "title": "Connected peers detected",
+      "details": "4 connected peer(s)"
+    },
+    {
+      "status": "pass",
+      "title": "Reported peer count available",
+      "details": "4"
+    },
+    {
+      "status": "pass",
+      "title": "Reported channel count available",
+      "details": "0"
+    }
+  ],
+  "node": {
+    "version": "0.9.0-rc7",
+    "pubkey": "031021597829e4c7c3f20eee2d1a51c874a0e94b9479d1498f4d0984b56064d897",
+    "chainHash": "0x10639e0895502b5688a6be8cf69460d76541bfa4821629d86d62ba0aae3f9606",
+    "network": "Fiber testnet",
+    "status": "reachable and connected",
+    "reportedPeerCount": "4",
+    "reportedChannelCount": "0",
+    "connectedPeers": 4
+  }
+}

@@ -1,0 +1,1 @@
+Failed to build CKB tx: balance capacity error: capacity not enough: need more capacity, value=1000.00000274

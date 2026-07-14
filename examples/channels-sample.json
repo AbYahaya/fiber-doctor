@@ -1,0 +1,55 @@
+{
+  "rpcUrl": "http://127.0.0.1:8227",
+  "diagnostics": [
+    {
+      "status": "warn",
+      "title": "No active channels found"
+    },
+    {
+      "status": "fail",
+      "title": "No outbound liquidity detected"
+    },
+    {
+      "status": "warn",
+      "title": "No inbound liquidity detected"
+    },
+    {
+      "status": "pass",
+      "title": "No pending channel opening attempts detected"
+    },
+    {
+      "status": "warn",
+      "title": "Recent failed channel attempts detected",
+      "details": "Funding transaction aborted"
+    }
+  ],
+  "channels": {
+    "total": 0,
+    "active": 0,
+    "pending": 0,
+    "closed": 0,
+    "pendingOrFailed": 1,
+    "pendingOpening": 0,
+    "sendReady": 0,
+    "receiveReady": 0,
+    "totalCapacity": "0",
+    "totalLocalBalance": "0",
+    "totalRemoteBalance": "0"
+  },
+  "latestPendingAttempt": null,
+  "latestFailedAttempt": {
+    "failure_detail": "Funding transaction aborted",
+    "pubkey": "0313dcf9cf18711b1b473a78ea56222dc44dcbfdf559d24dd937a0657d3bcb108f",
+    "state": {
+      "state_flags": "FUNDING_ABORTED",
+      "state_name": "Closed"
+    }
+  },
+  "diagnosis": "Your node is reachable, but it is not currently payment-ready because no active channels were found and at least one recent channel opening attempt failed.",
+  "suggestions": [
+    "Open a channel with a reachable peer.",
+    "Fund or rebalance a channel before attempting to send payments.",
+    "Increase inbound liquidity if you want this node to receive payments.",
+    "Inspect the latest failed channel attempt and verify your CKB funding capacity."
+  ]
+}

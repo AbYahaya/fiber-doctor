@@ -1,0 +1,12 @@
+{
+  "channel_id": "0x0ee3ce138ff02d60e30249a35034a27ef0e09952cb1fa0903c79dac7363fb7b2",
+  "enabled": false,
+  "failure_detail": "Funding transaction aborted",
+  "local_balance": "0x174876e800",
+  "pubkey": "0313dcf9cf18711b1b473a78ea56222dc44dcbfdf559d24dd937a0657d3bcb108f",
+  "remote_balance": "0x0",
+  "state": {
+    "state_flags": "FUNDING_ABORTED",
+    "state_name": "Closed"
+  }
+}

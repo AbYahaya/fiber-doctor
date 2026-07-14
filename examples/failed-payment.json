@@ -1,0 +1,9 @@
+{
+  "created_at": "0x19f58ca866d",
+  "custom_records": null,
+  "failed_error": "Send payment error: Failed to build route, Insufficient balance: max outbound liquidity 0 is insufficient, required amount: 1000",
+  "fee": "0x0",
+  "last_updated_at": "0x19f58ca866e",
+  "payment_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+  "status": "Failed"
+}

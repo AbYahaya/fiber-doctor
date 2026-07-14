@@ -1,0 +1,79 @@
+{
+  "last_cursor": "0x0000019f141233fb0203a63101ab84cc1c0494273f3578b8d90ab87f0e1cb756f3f66d6866414ff2c715000000",
+  "nodes": [
+    {
+      "addresses": [
+        "/ip4/172.31.28.209/tcp/8226/p2p/QmS4AKbQt8H7w4ZqZBFrCPZ6s65nGwoqkyPq5aCGG53uti",
+        "/ip4/172.31.28.209/tcp/8226/ws/p2p/QmS4AKbQt8H7w4ZqZBFrCPZ6s65nGwoqkyPq5aCGG53uti",
+        "/ip4/43.198.254.225/tcp/8226/p2p/QmS4AKbQt8H7w4ZqZBFrCPZ6s65nGwoqkyPq5aCGG53uti"
+      ],
+      "auto_accept_min_ckb_funding_amount": "0x2540be400",
+      "chain_hash": "0x10639e0895502b5688a6be8cf69460d76541bfa4821629d86d62ba0aae3f9606",
+      "features": [
+        "GOSSIP_QUERIES_REQUIRED",
+        "BASIC_MPP_REQUIRED",
+        "TRAMPOLINE_ROUTING_REQUIRED"
+      ],
+      "node_name": "",
+      "pubkey": "027f390147b3992115783dec8b63e50b6c8b68904a4bd9b7ffca1459d7057348f0",
+      "timestamp": "0x19f14122ec8",
+      "udt_cfg_infos": [
+        {
+          "auto_accept_amount": "0x3b9aca00",
+          "cell_deps": [
+            {
+              "type_id": {
+                "args": "0x97d30b723c0b2c66e9cb8d4d0df4ab5d7222cbb00d4a9a2055ce2e5d7f0d8b0f",
+                "code_hash": "0x00000000000000000000000000000000000000000000000000545950455f4944",
+                "hash_type": "type"
+              }
+            }
+          ],
+          "name": "RUSD",
+          "script": {
+            "args": "0x878fcc6f1f08d48e87bb1c3b3d5083f23f8a39c5d5c764f253b55b998526439b",
+            "code_hash": "0x1142755a044bf2ee358cba9f2da187ce928c91cd4dc8692ded0337efa677d21a",
+            "hash_type": "type"
+          }
+        }
+      ],
+      "version": "0.9.0-rc4"
+    },
+    {
+      "addresses": [
+        "/ip4/52.76.106.120/tcp/7227/p2p/Qma2wdDm8dyvchKdCGH25UcSew8miHj2aJywmUqAZYjX4u"
+      ],
+      "auto_accept_min_ckb_funding_amount": "0x2540be400",
+      "chain_hash": "0x10639e0895502b5688a6be8cf69460d76541bfa4821629d86d62ba0aae3f9606",
+      "features": [
+        "GOSSIP_QUERIES_REQUIRED",
+        "BASIC_MPP_REQUIRED",
+        "TRAMPOLINE_ROUTING_REQUIRED"
+      ],
+      "node_name": "",
+      "pubkey": "03a63101ab84cc1c0494273f3578b8d90ab87f0e1cb756f3f66d6866414ff2c715",
+      "timestamp": "0x19f141233fb",
+      "udt_cfg_infos": [
+        {
+          "auto_accept_amount": "0x3b9aca00",
+          "cell_deps": [
+            {
+              "type_id": {
+                "args": "0x97d30b723c0b2c66e9cb8d4d0df4ab5d7222cbb00d4a9a2055ce2e5d7f0d8b0f",
+                "code_hash": "0x00000000000000000000000000000000000000000000000000545950455f4944",
+                "hash_type": "type"
+              }
+            }
+          ],
+          "name": "RUSD",
+          "script": {
+            "args": "0x878fcc6f1f08d48e87bb1c3b3d5083f23f8a39c5d5c764f253b55b998526439b",
+            "code_hash": "0x1142755a044bf2ee358cba9f2da187ce928c91cd4dc8692ded0337efa677d21a",
+            "hash_type": "type"
+          }
+        }
+      ],
+      "version": "0.9.0-rc4"
+    }
+  ]
+}

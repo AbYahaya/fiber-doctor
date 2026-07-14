@@ -1,0 +1,54 @@
+{
+  "rpcUrl": "http://127.0.0.1:8227",
+  "diagnostics": [
+    {
+      "status": "warn",
+      "title": "No active channels found"
+    },
+    {
+      "status": "fail",
+      "title": "No outbound liquidity detected"
+    },
+    {
+      "status": "warn",
+      "title": "No inbound liquidity detected"
+    },
+    {
+      "status": "warn",
+      "title": "Pending channel opening attempts detected",
+      "details": "1 pending channel attempt(s) still in progress"
+    },
+    {
+      "status": "pass",
+      "title": "No recent failed channel attempts detected"
+    }
+  ],
+  "channels": {
+    "total": 0,
+    "active": 0,
+    "pending": 1,
+    "closed": 0,
+    "pendingOrFailed": 1,
+    "pendingOpening": 1,
+    "sendReady": 0,
+    "receiveReady": 0,
+    "totalCapacity": "0",
+    "totalLocalBalance": "0",
+    "totalRemoteBalance": "0"
+  },
+  "latestPendingAttempt": {
+    "pubkey": "02pendingpeer",
+    "state": {
+      "state_flags": "AWAITING_FUNDING",
+      "state_name": "NegotiatingFunding"
+    }
+  },
+  "latestFailedAttempt": null,
+  "diagnosis": "Your node is reachable, but it is not currently payment-ready because no active channels are usable yet and at least one channel opening attempt is still pending.",
+  "suggestions": [
+    "Open a channel with a reachable peer.",
+    "Fund or rebalance a channel before attempting to send payments.",
+    "Increase inbound liquidity if you want this node to receive payments.",
+    "Monitor pending channel attempts until they either become active or expose a failure detail."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "channels": [
+    {
+      "capacity": "0xa32aef600",
+      "chain_hash": "0x10639e0895502b5688a6be8cf69460d76541bfa4821629d86d62ba0aae3f9606",
+      "channel_outpoint": "0x36a09bbe734c519ff3be399e564ec9a32b3cc3cf0edc33e0d04df1a8ff08240900000000",
+      "created_timestamp": "0x199999e772d",
+      "node1": "0293854f643b732f82245942146263089a9e4acc40423ec472577851e7cf65e4ca",
+      "node2": "030316914a75e8f18faf82e8e6dd166f2aaa1f96105f98c099be4f3be073140eaf",
+      "udt_type_script": null,
+      "update_info_of_node1": {
+        "enabled": true,
+        "fee_rate": "0x3e8",
+        "outbound_liquidity": null,
+        "timestamp": "0x19f3b93d72e",
+        "tlc_expiry_delta": "0xdbba00",
+        "tlc_minimum_value": "0x0"
+      },
+      "update_info_of_node2": {
+        "enabled": true,
+        "fee_rate": "0x3e8",
+        "outbound_liquidity": null,
+        "timestamp": "0x19f3b93d727",
+        "tlc_expiry_delta": "0xdbba00",
+        "tlc_minimum_value": "0x0"
+      }
+    },
+    {
+      "capacity": "0x5f5e100",
+      "chain_hash": "0x10639e0895502b5688a6be8cf69460d76541bfa4821629d86d62ba0aae3f9606",
+      "channel_outpoint": "0x6ac4aadc639509bfe32b0cbee6b0f061a4ec873eb0e6986d1292adad0636569200000000",
+      "created_timestamp": "0x19999a65da8",
+      "node1": "0293854f643b732f82245942146263089a9e4acc40423ec472577851e7cf65e4ca",
+      "node2": "030316914a75e8f18faf82e8e6dd166f2aaa1f96105f98c099be4f3be073140eaf",
+      "udt_type_script": {
+        "args": "0x71fd1985b2971a9903e4d8ed0d59e6710166985217ca0681437883837b86162f",
+        "code_hash": "0xcc9dc33ef234e14bc788c43a4848556a5fb16401a04662fc55db9bb201987037",
+        "hash_type": "type"
+      },
+      "update_info_of_node1": {
+        "enabled": true,
+        "fee_rate": "0x3e8",
+        "outbound_liquidity": null,
+        "timestamp": "0x19f3b9b5756",
+        "tlc_expiry_delta": "0xdbba00",
+        "tlc_minimum_value": "0x0"
+      },
+      "update_info_of_node2": {
+        "enabled": true,
+        "fee_rate": "0x3e8",
+        "outbound_liquidity": null,
+        "timestamp": "0x19f3b9b575f",
+        "tlc_expiry_delta": "0xdbba00",
+        "tlc_minimum_value": "0x0"
+      }
+    }
+  ],
+  "last_cursor": "0x0000019999a65da8006ac4aadc639509bfe32b0cbee6b0f061a4ec873eb0e6986d1292adad0636569200000000"
+}

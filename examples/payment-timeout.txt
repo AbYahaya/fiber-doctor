@@ -1,0 +1,1 @@
+Payment timeout while waiting for completion

@@ -1,0 +1,21 @@
+{
+  "addresses": [],
+  "auto_accept_channel_ckb_funding_amount": "0x24e160300",
+  "chain_hash": "0x10639e0895502b5688a6be8cf69460d76541bfa4821629d86d62ba0aae3f9606",
+  "channel_count": "0x0",
+  "commit_hash": "bc361aa 2026-07-02",
+  "features": [
+    "GOSSIP_QUERIES_REQUIRED",
+    "BASIC_MPP_REQUIRED",
+    "TRAMPOLINE_ROUTING_REQUIRED"
+  ],
+  "node_name": null,
+  "open_channel_auto_accept_min_ckb_funding_amount": "0x2540be400",
+  "peers_count": "0x2",
+  "pending_channel_count": "0x0",
+  "pubkey": "031021597829e4c7c3f20eee2d1a51c874a0e94b9479d1498f4d0984b56064d897",
+  "tlc_expiry_delta": "0xdbba00",
+  "tlc_fee_proportional_millionths": "0x3e8",
+  "tlc_min_value": "0x0",
+  "version": "0.9.0-rc7"
+}

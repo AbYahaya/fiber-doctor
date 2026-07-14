@@ -1,0 +1,128 @@
+{
+  "rpcUrl": "http://127.0.0.1:8227",
+  "diagnostics": [
+    {
+      "status": "pass",
+      "title": "Fiber RPC reachable"
+    },
+    {
+      "status": "pass",
+      "title": "Node info fetched successfully"
+    },
+    {
+      "status": "pass",
+      "title": "Node identity available",
+      "details": "031021597829e4c7c3f20eee2d1a51c874a0e94b9479d1498f4d0984b56064d897"
+    },
+    {
+      "status": "pass",
+      "title": "Connected peers detected",
+      "details": "4 connected peer(s)"
+    },
+    {
+      "status": "warn",
+      "title": "No active channels found"
+    },
+    {
+      "status": "fail",
+      "title": "No outbound liquidity detected"
+    },
+    {
+      "status": "warn",
+      "title": "No inbound liquidity detected"
+    },
+    {
+      "status": "warn",
+      "title": "Recent failed channel attempts detected",
+      "details": "Funding transaction aborted"
+    },
+    {
+      "status": "pass",
+      "title": "Recent payment history available",
+      "details": "1 payment record(s) returned"
+    },
+    {
+      "status": "warn",
+      "title": "Recent failed payments detected",
+      "details": "Send payment error: Failed to build route, Insufficient balance: max outbound liquidity 0 is insufficient, required amount: 1000"
+    },
+    {
+      "status": "pass",
+      "title": "No inflight payments detected"
+    },
+    {
+      "status": "warn",
+      "title": "No completed payments found in the recent sample"
+    }
+  ],
+  "node": {
+    "version": "0.9.0-rc7",
+    "pubkey": "031021597829e4c7c3f20eee2d1a51c874a0e94b9479d1498f4d0984b56064d897",
+    "chainHash": "0x10639e0895502b5688a6be8cf69460d76541bfa4821629d86d62ba0aae3f9606",
+    "network": "Fiber testnet",
+    "status": "reachable and connected",
+    "reportedPeerCount": "4",
+    "reportedChannelCount": "0",
+    "connectedPeers": 4
+  },
+  "channels": {
+    "total": 0,
+    "active": 0,
+    "pending": 0,
+    "closed": 0,
+    "pendingOrFailed": 1,
+    "pendingOpening": 0,
+    "sendReady": 0,
+    "receiveReady": 0,
+    "totalCapacity": "0",
+    "totalLocalBalance": "0",
+    "totalRemoteBalance": "0"
+  },
+  "payments": {
+    "total": 1,
+    "failed": 1,
+    "inflight": 0,
+    "succeeded": 0,
+    "unknown": 0
+  },
+  "latestFailedPayment": {
+    "created_at": "0x19f58ca866d",
+    "custom_records": null,
+    "failed_error": "Send payment error: Failed to build route, Insufficient balance: max outbound liquidity 0 is insufficient, required amount: 1000",
+    "fee": "0x0",
+    "last_updated_at": "0x19f58ca866e",
+    "payment_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+    "status": "Failed"
+  },
+  "latestFailedPaymentExplanation": {
+    "category": "Insufficient outbound liquidity",
+    "diagnosis": "The node could not build a route because it does not currently have enough outbound liquidity to send the requested payment.",
+    "rawError": "Send payment error: Failed to build route, Insufficient balance: max outbound liquidity 0 is insufficient, required amount: 1000",
+    "suggestions": [
+      "Open and fund a channel before retrying the payment.",
+      "Reduce the payment amount if you suspect capacity is too low.",
+      "Rebalance liquidity if channels exist but cannot currently send."
+    ]
+  },
+  "readiness": {
+    "overallHealth": "blocked",
+    "send": "blocked",
+    "receive": "blocked"
+  },
+  "blockers": [
+    "No active channels; recent channel opening attempts failed",
+    "Send readiness depends on opening an active channel",
+    "Receive readiness depends on opening an active channel",
+    "Recent failed payments: Insufficient outbound liquidity"
+  ],
+  "diagnosis": "The node is reachable, but one or more operator blockers are preventing full payment readiness. Send readiness is blocked. Receive readiness is blocked. Top blockers: No active channels; recent channel opening attempts failed; Send readiness depends on opening an active channel; Receive readiness depends on opening an active channel; Recent failed payments: Insufficient outbound liquidity.",
+  "suggestions": [
+    "Inspect the latest failed channel attempt and verify your CKB funding capacity.",
+    "Open a channel with a reachable peer.",
+    "Fund or rebalance a channel before attempting to send payments.",
+    "Increase inbound liquidity if you want this node to receive payments.",
+    "Open and fund a channel before retrying the payment.",
+    "Reduce the payment amount if you suspect capacity is too low.",
+    "Rebalance liquidity if channels exist but cannot currently send."
+  ]
+}

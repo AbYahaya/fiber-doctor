@@ -1,0 +1,42 @@
+{
+  "rpcUrl": "http://127.0.0.1:8227",
+  "diagnostics": [
+    {
+      "status": "pass",
+      "title": "At least one active channel found"
+    },
+    {
+      "status": "pass",
+      "title": "Outbound liquidity detected"
+    },
+    {
+      "status": "pass",
+      "title": "Inbound liquidity detected"
+    },
+    {
+      "status": "pass",
+      "title": "No pending channel opening attempts detected"
+    },
+    {
+      "status": "pass",
+      "title": "No recent failed channel attempts detected"
+    }
+  ],
+  "channels": {
+    "total": 1,
+    "active": 1,
+    "pending": 0,
+    "closed": 0,
+    "pendingOrFailed": 0,
+    "pendingOpening": 0,
+    "sendReady": 1,
+    "receiveReady": 1,
+    "totalCapacity": "1000",
+    "totalLocalBalance": "700",
+    "totalRemoteBalance": "300"
+  },
+  "latestPendingAttempt": null,
+  "latestFailedAttempt": null,
+  "diagnosis": "Your node appears to have at least one active channel with both outbound and inbound liquidity signals.",
+  "suggestions": []
+}
