@@ -5,7 +5,6 @@ import {
   explainFiberInput,
 } from "../../src/diagnostics/payment-checks";
 import { buildReportSummary } from "../../src/diagnostics/report-checks";
-import { loadConfig } from "../../src/config/load-config";
 import {
   getNodeInfo,
   listChannels,
@@ -32,8 +31,10 @@ type RuntimeError = {
   };
 };
 
+const DEFAULT_RPC_URL = "http://127.0.0.1:8227";
+
 function resolveRpcUrl(input: RuntimeRequest): string {
-  return loadConfig({ configPath: input.configPath, rpcUrl: input.rpcUrl }).rpcUrl;
+  return input.rpcUrl?.trim() || DEFAULT_RPC_URL;
 }
 
 function serializeError(error: unknown): RuntimeError {
